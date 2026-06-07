@@ -1,0 +1,121 @@
+/* ===================================================
+   MENU PAGE — MoRa Tea (Highlands Style)
+=================================================== */
+
+.menu-page {
+  min-height: 100vh;
+}
+
+/* ── Category section ── */
+.menu-cat-section {
+  display: flex;
+  align-items: center;
+  min-height: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Left = text first, image second */
+.menu-cat-section.align-left {
+  flex-direction: row;
+}
+
+/* Right = image first, text second */
+.menu-cat-section.align-right {
+  flex-direction: row-reverse;
+}
+
+/* Text side */
+.cat-text {
+  flex: 0 0 45%;
+  padding: 4rem 4rem 4rem 5rem;
+  z-index: 2;
+}
+
+.align-right .cat-text {
+  padding: 4rem 5rem 4rem 4rem;
+}
+
+.cat-label {
+  font-family: var(--font-sans);
+  font-size: 3rem;
+  font-weight: 700; /* Reduced from 800 */
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+  line-height: 1;
+}
+
+.cat-desc {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  opacity: 0.85;
+}
+
+.cat-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.6rem;
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-family: var(--font-sans, sans-serif);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.cat-cta:hover {
+  opacity: 0.75;
+  transform: translateY(-1px);
+}
+
+/* Image side */
+.cat-img-wrap {
+  flex: 0 0 55%;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+.menu-cat-section:hover .cat-img {
+  transform: scale(1.04);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .menu-cat-section.align-left,
+  .menu-cat-section.align-right {
+    flex-direction: column;
+  }
+
+  .cat-img-wrap {
+    flex: none;
+    width: 100%;
+    height: 260px;
+  }
+
+  .cat-text {
+    flex: none;
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .align-right .cat-text {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cat-label { font-size: 2.2rem; }
+}

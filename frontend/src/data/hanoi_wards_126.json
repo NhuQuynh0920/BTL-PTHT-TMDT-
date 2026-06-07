@@ -1,0 +1,506 @@
+[
+  {
+    "id": "00001",
+    "name": "Phường Phúc Xá"
+  },
+  {
+    "id": "00004",
+    "name": "Phường Trúc Bạch"
+  },
+  {
+    "id": "00006",
+    "name": "Phường Vĩnh Phúc"
+  },
+  {
+    "id": "00007",
+    "name": "Phường Cống Vị"
+  },
+  {
+    "id": "00008",
+    "name": "Phường Liễu Giai"
+  },
+  {
+    "id": "00013",
+    "name": "Phường Quán Thánh"
+  },
+  {
+    "id": "00016",
+    "name": "Phường Ngọc Hà"
+  },
+  {
+    "id": "00019",
+    "name": "Phường Điện Biên"
+  },
+  {
+    "id": "00022",
+    "name": "Phường Đội Cấn"
+  },
+  {
+    "id": "00025",
+    "name": "Phường Ngọc Khánh"
+  },
+  {
+    "id": "00028",
+    "name": "Phường Kim Mã"
+  },
+  {
+    "id": "00031",
+    "name": "Phường Giảng Võ"
+  },
+  {
+    "id": "00034",
+    "name": "Phường Thành Công"
+  },
+  {
+    "id": "00037",
+    "name": "Phường Phúc Tân"
+  },
+  {
+    "id": "00040",
+    "name": "Phường Đồng Xuân"
+  },
+  {
+    "id": "00043",
+    "name": "Phường Hàng Mã"
+  },
+  {
+    "id": "00046",
+    "name": "Phường Hàng Buồm"
+  },
+  {
+    "id": "00049",
+    "name": "Phường Hàng Đào"
+  },
+  {
+    "id": "00052",
+    "name": "Phường Hàng Bồ"
+  },
+  {
+    "id": "00055",
+    "name": "Phường Cửa Đông"
+  },
+  {
+    "id": "00058",
+    "name": "Phường Lý Thái Tổ"
+  },
+  {
+    "id": "00061",
+    "name": "Phường Hàng Bạc"
+  },
+  {
+    "id": "00064",
+    "name": "Phường Hàng Gai"
+  },
+  {
+    "id": "00067",
+    "name": "Phường Chương Dương"
+  },
+  {
+    "id": "00070",
+    "name": "Phường Hàng Trống"
+  },
+  {
+    "id": "00073",
+    "name": "Phường Cửa Nam"
+  },
+  {
+    "id": "00076",
+    "name": "Phường Hàng Bông"
+  },
+  {
+    "id": "00079",
+    "name": "Phường Tràng Tiền"
+  },
+  {
+    "id": "00082",
+    "name": "Phường Trần Hưng Đạo"
+  },
+  {
+    "id": "00085",
+    "name": "Phường Phan Chu Trinh"
+  },
+  {
+    "id": "00088",
+    "name": "Phường Hàng Bài"
+  },
+  {
+    "id": "00091",
+    "name": "Phường Phú Thượng"
+  },
+  {
+    "id": "00094",
+    "name": "Phường Nhật Tân"
+  },
+  {
+    "id": "00097",
+    "name": "Phường Tứ Liên"
+  },
+  {
+    "id": "00100",
+    "name": "Phường Quảng An"
+  },
+  {
+    "id": "00103",
+    "name": "Phường Xuân La"
+  },
+  {
+    "id": "00106",
+    "name": "Phường Yên Phụ"
+  },
+  {
+    "id": "00109",
+    "name": "Phường Bưởi"
+  },
+  {
+    "id": "00112",
+    "name": "Phường Thụy Khuê"
+  },
+  {
+    "id": "00115",
+    "name": "Phường Thượng Thanh"
+  },
+  {
+    "id": "00118",
+    "name": "Phường Ngọc Thụy"
+  },
+  {
+    "id": "00121",
+    "name": "Phường Giang Biên"
+  },
+  {
+    "id": "00124",
+    "name": "Phường Đức Giang"
+  },
+  {
+    "id": "00127",
+    "name": "Phường Việt Hưng"
+  },
+  {
+    "id": "00130",
+    "name": "Phường Gia Thụy"
+  },
+  {
+    "id": "00133",
+    "name": "Phường Ngọc Lâm"
+  },
+  {
+    "id": "00136",
+    "name": "Phường Phúc Lợi"
+  },
+  {
+    "id": "00139",
+    "name": "Phường Bồ Đề"
+  },
+  {
+    "id": "00145",
+    "name": "Phường Long Biên"
+  },
+  {
+    "id": "00148",
+    "name": "Phường Thạch Bàn"
+  },
+  {
+    "id": "00151",
+    "name": "Phường Phúc Đồng"
+  },
+  {
+    "id": "00379",
+    "name": "Xã Bắc Sơn"
+  },
+  {
+    "id": "00382",
+    "name": "Xã Minh Trí"
+  },
+  {
+    "id": "00385",
+    "name": "Xã Hồng Kỳ"
+  },
+  {
+    "id": "00388",
+    "name": "Xã Nam Sơn"
+  },
+  {
+    "id": "00391",
+    "name": "Xã Trung Giã"
+  },
+  {
+    "id": "00394",
+    "name": "Xã Tân Hưng"
+  },
+  {
+    "id": "00397",
+    "name": "Xã Minh Phú"
+  },
+  {
+    "id": "00400",
+    "name": "Xã Phù Linh"
+  },
+  {
+    "id": "00403",
+    "name": "Xã Bắc Phú"
+  },
+  {
+    "id": "00406",
+    "name": "Xã Tân Minh"
+  },
+  {
+    "id": "00409",
+    "name": "Xã Quang Tiến"
+  },
+  {
+    "id": "00412",
+    "name": "Xã Hiền Ninh"
+  },
+  {
+    "id": "00415",
+    "name": "Xã Tân Dân"
+  },
+  {
+    "id": "00418",
+    "name": "Xã Tiên Dược"
+  },
+  {
+    "id": "00421",
+    "name": "Xã Việt Long"
+  },
+  {
+    "id": "00424",
+    "name": "Xã Xuân Giang"
+  },
+  {
+    "id": "00427",
+    "name": "Xã Mai Đình"
+  },
+  {
+    "id": "00430",
+    "name": "Xã Đức Hoà"
+  },
+  {
+    "id": "00433",
+    "name": "Xã Thanh Xuân"
+  },
+  {
+    "id": "00436",
+    "name": "Xã Đông Xuân"
+  },
+  {
+    "id": "00439",
+    "name": "Xã Kim Lũ"
+  },
+  {
+    "id": "00442",
+    "name": "Xã Phú Cường"
+  },
+  {
+    "id": "00445",
+    "name": "Xã Phú Minh"
+  },
+  {
+    "id": "00448",
+    "name": "Xã Phù Lỗ"
+  },
+  {
+    "id": "00451",
+    "name": "Xã Xuân Thu"
+  },
+  {
+    "id": "00457",
+    "name": "Xã Xuân Nộn"
+  },
+  {
+    "id": "00460",
+    "name": "Xã Thuỵ Lâm"
+  },
+  {
+    "id": "00463",
+    "name": "Xã Bắc Hồng"
+  },
+  {
+    "id": "00466",
+    "name": "Xã Nguyên Khê"
+  },
+  {
+    "id": "00469",
+    "name": "Xã Nam Hồng"
+  },
+  {
+    "id": "00472",
+    "name": "Xã Tiên Dương"
+  },
+  {
+    "id": "00475",
+    "name": "Xã Vân Hà"
+  },
+  {
+    "id": "00478",
+    "name": "Xã Uy Nỗ"
+  },
+  {
+    "id": "00481",
+    "name": "Xã Vân Nội"
+  },
+  {
+    "id": "00484",
+    "name": "Xã Liên Hà"
+  },
+  {
+    "id": "00487",
+    "name": "Xã Việt Hùng"
+  },
+  {
+    "id": "00490",
+    "name": "Xã Kim Nỗ"
+  },
+  {
+    "id": "00493",
+    "name": "Xã Kim Chung"
+  },
+  {
+    "id": "00496",
+    "name": "Xã Dục Tú"
+  },
+  {
+    "id": "00499",
+    "name": "Xã Đại Mạch"
+  },
+  {
+    "id": "00502",
+    "name": "Xã Vĩnh Ngọc"
+  },
+  {
+    "id": "00505",
+    "name": "Xã Cổ Loa"
+  },
+  {
+    "id": "00508",
+    "name": "Xã Hải Bối"
+  },
+  {
+    "id": "00511",
+    "name": "Xã Xuân Canh"
+  },
+  {
+    "id": "00514",
+    "name": "Xã Võng La"
+  },
+  {
+    "id": "00517",
+    "name": "Xã Tàm Xá"
+  },
+  {
+    "id": "00520",
+    "name": "Xã Mai Lâm"
+  },
+  {
+    "id": "00523",
+    "name": "Xã Đông Hội"
+  },
+  {
+    "id": "00529",
+    "name": "Xã Yên Thường"
+  },
+  {
+    "id": "00532",
+    "name": "Xã Yên Viên"
+  },
+  {
+    "id": "00535",
+    "name": "Xã Ninh Hiệp"
+  },
+  {
+    "id": "00541",
+    "name": "Xã Thiên Đức"
+  },
+  {
+    "id": "00544",
+    "name": "Xã Phù Đổng"
+  },
+  {
+    "id": "00550",
+    "name": "Xã Lệ Chi"
+  },
+  {
+    "id": "00553",
+    "name": "Xã Cổ Bi"
+  },
+  {
+    "id": "00556",
+    "name": "Xã Đặng Xá"
+  },
+  {
+    "id": "00562",
+    "name": "Xã Phú Sơn"
+  },
+  {
+    "id": "00568",
+    "name": "Xã Dương Quang"
+  },
+  {
+    "id": "00571",
+    "name": "Xã Dương Xá"
+  },
+  {
+    "id": "00577",
+    "name": "Xã Đa Tốn"
+  },
+  {
+    "id": "00580",
+    "name": "Xã Kiêu Kỵ"
+  },
+  {
+    "id": "00583",
+    "name": "Xã Bát Tràng"
+  },
+  {
+    "id": "00589",
+    "name": "Xã Kim Đức"
+  },
+  {
+    "id": "00643",
+    "name": "Xã Tân Triều"
+  },
+  {
+    "id": "00646",
+    "name": "Xã Thanh Liệt"
+  },
+  {
+    "id": "00649",
+    "name": "Xã Tả Thanh Oai"
+  },
+  {
+    "id": "00652",
+    "name": "Xã Hữu Hoà"
+  },
+  {
+    "id": "00655",
+    "name": "Xã Tam Hiệp"
+  },
+  {
+    "id": "00658",
+    "name": "Xã Tứ Hiệp"
+  },
+  {
+    "id": "00661",
+    "name": "Xã Yên Mỹ"
+  },
+  {
+    "id": "00664",
+    "name": "Xã Vĩnh Quỳnh"
+  },
+  {
+    "id": "00667",
+    "name": "Xã Ngũ Hiệp"
+  },
+  {
+    "id": "00670",
+    "name": "Xã Duyên Hà"
+  },
+  {
+    "id": "00673",
+    "name": "Xã Ngọc Hồi"
+  },
+  {
+    "id": "00676",
+    "name": "Xã Vạn Phúc"
+  }
+]

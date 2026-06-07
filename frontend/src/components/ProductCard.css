@@ -1,0 +1,209 @@
+/* ===================================================
+   PRODUCT CARD — MoRa Tea (Premium UI/UX)
+=================================================== */
+
+.product-card {
+  background: #fff;
+  border-radius: 20px; /* Slightly more rounded */
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(45, 26, 14, 0.05); /* Softer, larger shadow */
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: none; /* Remove border for cleaner look */
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-8px); /* More pronounced lift */
+  box-shadow: 0 15px 40px rgba(45, 26, 14, 0.1);
+}
+
+/* ---- Image area ---- */
+
+.product-img-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.product-img-link.unavailable .product-img {
+  filter: grayscale(0.6) blur(1px);
+}
+
+.product-unavailable-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.product-unavailable-overlay span {
+  background: rgba(197, 48, 48, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: rotate(-5deg);
+}
+
+.product-img-wrap {
+  width: 100%;
+  height: 100%;
+  padding: 12px; /* Add some space around image */
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+  border-radius: 12px; /* Bo tròn hình ảnh */
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.06);
+}
+
+/* Category badge */
+
+.product-badge-cat {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(45, 26, 14, 0.72);
+  color: #ffd49e;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: var(--font-sans, sans-serif);
+}
+
+/* ---- Body ---- */
+
+.product-body {
+  padding: 0.5rem 1.5rem 1.5rem; /* Increased padding */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+/* Product name */
+
+.product-name {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2d1a0e;
+  text-decoration: none;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  min-height: 2.6rem;
+  margin-bottom: 0.1rem;
+
+  word-break: normal;
+  overflow-wrap: anywhere;
+  transition: color 0.2s;
+}
+
+.product-name:hover {
+  color: var(--primary, #e05c00);
+}
+
+/* Description */
+
+.product-desc-short {
+  font-size: 0.75rem;
+  font-family: var(--font-sans, sans-serif);
+  color: #9e8a78;
+  line-height: 1.6;
+  font-weight: 400;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+
+  min-height: 2.56rem;
+}
+
+/* ---- Footer ---- */
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.8rem;
+  border-top: 1px solid #f0e8de;
+  gap: 0.5rem;
+}
+
+.product-price {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700; /* Increased weight for visibility while in sans */
+  color: var(--primary, #e05c00);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+/* Add to cart */
+
+.btn-add-cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.6rem 1.2rem; /* Thêm padding */
+  background: #ff8225; /* Màu cam */
+  color: #fff;
+  border-radius: 30px; /* Bo tròn hoàn toàn */
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-add-cart svg {
+  flex-shrink: 0;
+}
+
+.btn-add-cart:hover {
+  background: #e05c00; /* Màu đậm hơn khi hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 130, 37, 0.3);
+}

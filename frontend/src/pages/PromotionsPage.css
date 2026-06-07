@@ -1,0 +1,453 @@
+/* ===================================================
+   PROMOTIONS PAGE — MoRa Tea
+   Consistent with HomePage / MenuPage design system
+=================================================== */
+
+.promo-page {
+  background: #fdf6ef;
+  min-height: 100vh;
+}
+
+/* ══════════════════════════════════════
+   HERO — flat bottom, no wave
+══════════════════════════════════════ */
+.promo-hero {
+  background: linear-gradient(155deg, #2d1a0e 0%, #5c2e0a 50%, #e05c00 100%);
+  padding: 5rem 1.5rem 0; /* Matched to blog-hero */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* background overlay image */
+.promo-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/custom_assets/promo_hero.png') center/cover no-repeat;
+  opacity: 0.4;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.promo-hero-inner {
+  max-width: 720px; /* matched to blog */
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.promo-hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.8rem; /* matched to blog */
+  font-weight: 700;
+  letter-spacing: 0.12em; /* matched to blog */
+  text-transform: uppercase;
+  color: #ffd49e;
+  background: rgba(255,255,255,0.1);
+  padding: 0.35rem 1rem; /* matched to blog */
+  border-radius: 999px;
+  margin-bottom: 1.2rem; /* matched to blog */
+  border: 1px solid rgba(255,212,158,0.3);
+}
+
+.promo-hero-title {
+  font-family: var(--font-sans);
+  font-size: 3.2rem;
+  font-weight: 700; /* Reduced from 800 */
+  color: #fff;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.promo-hero-desc {
+  font-family: var(--font-sans, sans-serif);
+  font-size: 1rem; /* matched to blog */
+  color: rgba(255,255,255,0.75); /* matched to blog */
+  line-height: 1.8;
+  max-width: 560px; /* matched to blog */
+  margin: 0 auto;
+}
+
+/* ══════════════════════════════════════
+   BODY
+══════════════════════════════════════ */
+.promo-body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem; /* matched closing padding to blog */
+}
+
+/* ── Tabs ── */
+.promo-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px);
+  flex-wrap: wrap;
+}
+
+.promo-tab {
+  padding: 0.5rem 1.3rem;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  background: transparent;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: var(--font-sans, sans-serif);
+  letter-spacing: 0.02em;
+}
+
+.promo-tab:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border-color: rgba(255,255,255,0.6);
+}
+
+.promo-tab.active {
+  background: #e05c00;
+  color: #fff;
+  border-color: #e05c00;
+  box-shadow: 0 4px 12px rgba(224,92,0,0.4);
+}
+
+/* ── Grid — 3 cols desktop ── */
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; /* Matched to blog-grid */
+  margin-bottom: 3rem;
+}
+
+/* ══════════════════════════════════════
+   PROMO CARD
+══════════════════════════════════════ */
+.promo-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08); /* matched to blog */
+  transition: transform 0.25s, box-shadow 0.25s; /* matched to blog */
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.13); /* matched to blog */
+}
+
+/* Image */
+.promo-card-img-wrap {
+  position: relative;
+  aspect-ratio: 16 / 10; /* Matched to blog-card-img-link */
+  overflow: hidden;
+}
+
+.promo-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+  display: block;
+}
+
+.promo-card:hover .promo-card-img {
+  transform: scale(1.06);
+}
+
+/* Overlay for readability */
+.promo-card-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(20,8,2,0.35) 100%);
+  pointer-events: none;
+}
+
+/* Badge */
+.promo-card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.67rem;
+  font-weight: 700; /* Reduced from 800 */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: var(--font-sans, sans-serif);
+}
+
+/* Body */
+.promo-card-body {
+  padding: 1.25rem 1.25rem 1.5rem; /* matched to blog */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-card-period {
+  font-size: 0.78rem; /* matched to blog meta */
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.promo-card-period svg {
+  flex-shrink: 0;
+  color: #ccc;
+}
+
+.promo-card-title {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2d1a0e;
+  line-height: 1.45;
+  margin-bottom: 0.65rem;
+}
+
+.promo-card-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.promo-card-title a:hover {
+  color: #e05c00;
+}
+
+.promo-card-desc {
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.875rem; /* matched to blog */
+  color: #666; /* matched to blog */
+  line-height: 1.65;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.promo-card-cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e05c00; /* matched to blog */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: gap 0.2s;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-weight: 700; /* Reduced from 800 */
+  letter-spacing: 0.1em;
+  font-family: var(--font-sans, sans-serif);
+}
+
+.promo-card-cta:hover {
+  gap: 0.6rem; /* matched arrow spacing logic */
+  color: #e05c00;
+}
+
+/* ── Empty state ── */
+.promo-empty {
+  text-align: center;
+  color: #9e8070;
+  padding: 4rem 2rem;
+  font-size: 1rem;
+  font-family: var(--font-sans, sans-serif);
+}
+
+/* ══════════════════════════════════════
+   NOTICE STRIP
+══════════════════════════════════════ */
+.promo-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: #fffbf5;
+  border: 1px solid #fde8c8;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  font-size: 0.82rem;
+  color: #7c4a1e;
+  line-height: 1.65;
+  font-family: var(--font-sans, sans-serif);
+}
+
+.promo-notice svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--primary, #e05c00);
+}
+
+.promo-notice p { margin: 0; }
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .promo-grid { grid-template-columns: repeat(2, 1fr); }
+  .promo-hero-title { font-size: 2.2rem; }
+}
+
+@media (max-width: 600px) {
+  .promo-grid { grid-template-columns: 1fr; }
+  .promo-hero-title { font-size: 1.9rem; }
+}
+
+/* ══════════════════════════════════════
+   MODAL
+══════════════════════════════════════ */
+.promo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.promo-modal-content {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  position: relative;
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px) scale(0.95); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.promo-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+.promo-modal-close:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.promo-modal-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.promo-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promo-modal-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.promo-modal-body {
+  padding: 2rem;
+}
+
+.promo-modal-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2d1a0e;
+  margin-bottom: 1rem;
+}
+
+.promo-modal-period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.promo-modal-period svg {
+  color: #999;
+}
+
+.promo-modal-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.promo-modal-footer {
+  text-align: right;
+}
+
+.promo-modal-action-btn {
+  background: #e05c00;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.75rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(224, 92, 0, 0.3);
+}
+
+.promo-modal-action-btn:hover {
+  background: #cc5300;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(224, 92, 0, 0.4);
+}
